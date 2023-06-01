@@ -28,7 +28,7 @@ Follow these steps to quickly set up and start using the ChatGPT AI Doctor Plugi
     ```
 2. Navigate to the project directory:
     ```bash
-    cd ~/doctorai
+    cd doctorai
     ```
 3. Install the dependencies:
     ```bash
