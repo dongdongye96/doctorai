@@ -45,6 +45,7 @@ browser = await puppeteer.launch({
           args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
 ```
+tips:If you didn't install Chrome, you can find this path 'usr/.cache/puppeteer', then replace it by yours.
 
 2.Start the plugin with the following command:
 ```bash
@@ -54,13 +55,13 @@ node app.js
 
 
 ## Contribution
-Contributions to the ChatGPT AI Doctor Plugin are welcome. Please submit a pull request or issue on the repository page.
+Contributions to the ChatGPT Plugin DoctorAI are welcome. Please submit a pull request or issue on the repository page.
 
 ## License
 This project is licensed under the [GAGP](LICENSE).
 
 ## Contact
-For questions and support, please contact the project team at [email address].
+For questions and support, please contact the project team at [dong5655@outlook.com].
 
 ## Disclaimer
 The ChatGPT Plugin DoctorAI is not a replacement for professional medical advice or treatment. It should be used for informational purposes only. Always seek the advice of a healthcare professional with any questions regarding a medical condition.
