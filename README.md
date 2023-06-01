@@ -51,8 +51,15 @@ tips:If you didn't install Chrome, you can find this path 'usr/.cache/puppeteer'
 ```bash
 node app.js
 ```
+Once the local server is running:
 
+- Navigate to https://chat.openai.com.
+- In the Model drop down, select "Plugins" (note, if you don't see it there, you don't have access yet).
+- Select "Plugin store"
+- Select "Develop your own plugin"
+- Enter in localhost:8080 since this is the URL the server is running on locally, then select "Find manifest file".
 
+The plugin should now be installed and enabled! You can start with a question like "I have headache, what should I do?" and then try adding something to it as well!
 
 ## Contribution
 Contributions to the ChatGPT Plugin DoctorAI are welcome. Please submit a pull request or issue on the repository page.
