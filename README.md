@@ -26,7 +26,7 @@ Follow these steps to quickly set up and start using the ChatGPT AI Doctor Plugi
 
 1. Clone the repository:
 ```bash
-git clone [git@github.com:dongdongye96/doctorai.git](https://github.com/dongdongye96/doctorai.git)
+git clone https://github.com/dongdongye96/doctorai.git
 ```
 2. Navigate to the project directory:
 ```bash
