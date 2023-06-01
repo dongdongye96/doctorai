@@ -1,7 +1,7 @@
 # DoctorAI - ChatGPT Plugin
 
 ## Overview
-The ChatGPT AI Doctor Plugin is a JavaScript-based extension to the ChatGPT model developed by OpenAI. This plugin enables ChatGPT to take on the role of a virtual physician, attentively asking about a user's current physical condition and providing diagnostic and treatment advice based on professional medical knowledge.
+The DoctorAI is a Plugin to the ChatGPT developed by OpenAI. This plugin enables ChatGPT to take on the role of a virtual physician, attentively asking about a user's current physical condition and providing diagnostic and treatment advice based on professional medical knowledge.
 
 ## Features
 - **User Interaction**: The plugin enables ChatGPT to interact with users in a responsible and patient manner, similar to a real-life physician. It can ask about users' current physical condition and other relevant medical information.
@@ -26,7 +26,7 @@ Follow these steps to quickly set up and start using the ChatGPT AI Doctor Plugi
 
 1. Clone the repository:
 ```bash
-git clone git@github.com:dongdongye96/doctorai.git
+git clone [git@github.com:dongdongye96/doctorai.git](https://github.com/dongdongye96/doctorai.git)
 ```
 2. Navigate to the project directory:
 ```bash
@@ -45,7 +45,7 @@ browser = await puppeteer.launch({
           args: ['--no-sandbox', '--disable-setuid-sandbox']
         });
 ```
-tips:If you didn't install Chrome, you can find this path 'usr/.cache/puppeteer', then replace it by yours.
+tips:If you didn't install Chrome, you can find it at this path 'usr/.cache/puppeteer', then replace it by yours.
 
 2.Start the plugin with the following command:
 ```bash
