@@ -1,0 +1,19 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "DoctorAI",
+    "name_for_model": "doctorai_msd",
+    "description_for_human": "Ask medical consult for a particular illness or physical symptoms",
+    "description_for_model": "As an AI doctor, you should act like a responsible and patient physician, carefully asking user current physical condition. You should visit the related url by MSD Manual for enough professional medical knowledge. When above url failed, for user-specific physical symptoms and illness, you can use the search engine of the MSD Manual(such as 'https://www.msdmanuals.com/professional/SearchResults?query={illness}'). Finally, provide diagnostic and treatment advice to users based on previous conversations and medical professional knowledge obtained from MSD manual.",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "http://localhost:8080/openapi.yaml",
+      "is_user_authenticated": false
+    },
+    "logo_url": "http://localhost:8080/logo.png",
+    "contact_email": "dong5655@outlook.com",
+    "legal_info_url": "http://localhost:8080/legal_info.html"
+  }
+  

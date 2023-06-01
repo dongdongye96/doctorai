@@ -1,0 +1,56 @@
+openapi: 3.0.1
+info:
+  title: Doctor AI by MSD
+  description: This plugin allows users to ask medical advice from MSD Manual, retrieves the web page content, and returns a comprehensible summary of it.
+  version: 'v1'
+servers:
+  - url: http://localhost:8080
+paths:
+  /msd:
+    post:
+      operationId: visitMsd
+      summary: visit search web page of msd manuals for medical advice
+      requestBody:
+        required: true
+        content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/visitMsdRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/visitMsdResponse'
+components:
+  schemas:
+    visitMsdResponse:
+      type: object
+      properties:
+        title:
+          type: string
+          description: The title of this web page
+        content:
+          type: string
+          description: The content of the web page's url to be summarized
+        todo:
+          type: array
+          description: what to do with the content
+          items:
+            type: string
+        tips:
+          type: array
+          description: Tips placed at the end of the answer
+          items:
+            type: string
+        rules:
+          description: Adherence is required when outputting content.
+          items:
+            type: string
+    visitMsdRequest:
+      type: object
+      properties:
+        link:
+          type: string
+          description: The URL by MSD Manual to visit and retrieve content from.
